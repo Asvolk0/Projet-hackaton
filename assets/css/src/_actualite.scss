@@ -1,0 +1,7 @@
+// Section Actualité
+.news_title {
+  color: $secondaryColor;
+}
+.actualites {
+  @include flex(center, center);
+}

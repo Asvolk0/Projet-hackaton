@@ -1,0 +1,16 @@
+// Paramètres généraux
+body {
+  color: $dark;
+  @include font("JOST_L", 16);
+}
+.title_2 {
+  position: relative;
+  @include font("AM_B", 45, center);
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $primaryColor;
+    width: 15%;
+    bottom: 0;
+  }
+}
