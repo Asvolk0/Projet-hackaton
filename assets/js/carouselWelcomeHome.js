@@ -27,7 +27,7 @@ setInterval(function() {
     console.log('salut');
     removeActiveImages();
     img__slider[etape].classList.add('active');
-}, 3000)
+}, 6000)
 //      ^
 //      |
 // sert à indiquer le nombre de centieme de seconde à attendre avant que la fonction s'enclenche
