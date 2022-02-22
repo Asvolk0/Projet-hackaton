@@ -5,12 +5,19 @@ body {
 }
 .title_2 {
   position: relative;
-  @include font("AM_B", 45, center);
+  @include font("AM_B", 50, center);
   &::before {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid $primaryColor;
-    width: 15%;
-    bottom: 0;
+    @include borderTitle(315);
   }
+}
+.btn_light {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: $secondaryColor;
+  @include borderSetting($borderSolidSecondary);
+  @include borderRadius($radius35);
+  @include containerSize(105px, $mxAuto);
+  padding: 10px 15px;
+  cursor: pointer;
 }

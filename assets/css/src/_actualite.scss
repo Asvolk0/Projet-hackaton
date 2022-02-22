@@ -1,7 +1,34 @@
 // Section Actualité
-.news_title {
-  color: $secondaryColor;
+section:nth-child(2) {
+  .title_2 {
+    &::before {
+      @include borderTitle(495);
+    }
+  }
 }
 .actualites {
-  @include flex(center, center);
+  padding: 80px 0 40px;
+  @include flex(center, stretch);
+  .news_items {
+    flex-basis: 25%;
+    @include borderSetting($borderSolidDark);
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    .news_item_content {
+      padding: 35px 25px;
+      .date_news {
+        color: $gray;
+        padding-bottom: 5px;
+      }
+      .news_title {
+        color: $secondaryColor;
+        padding-bottom: 20px;
+        @include font("JOST_R", 24);
+      }
+      & > p {
+        font-size: 18px;
+      }
+    }
+  }
 }
