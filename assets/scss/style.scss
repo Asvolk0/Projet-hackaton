@@ -16,9 +16,9 @@ body{
                 left: 0;
                 opacity: 0;
                 transition: opacity .5s;
-                .active {
-                    opacity: 1;
-                }
+            }
+            .active {
+                opacity: 1;
             }
         }
     }
