@@ -30,29 +30,33 @@ body {
 }
 .btn_secondary {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: $secondaryColor;
   @include borderSetting($borderSolidSecondary);
   @include borderRadius($radius35);
-  @include containerSize(110px, $mxAuto);
+  @include containerSize(116px, $mxAuto);
   padding: 15px;
   cursor: pointer;
   @include respond("mobile") {
+    font-size: 30px;
     margin: 0 40px;
-    width: 125px;
+    width: 175px;
   }
   @include respond("mobileLarge") {
-    width: 125px;
+    font-size: 30px;
+    width: 175px;
     margin: 0 40px;
   }
   @include respond("tab") {
+    font-size: 30px;
     margin: 0 40px;
-    width: 125px;
+    width: 175px;
   }
   @include respond("tabLand") {
+    font-size: 30px;
     margin: 0 40px;
-    width: 125px;
+    width: 175px;
   }
 }
 .btn_primary {
