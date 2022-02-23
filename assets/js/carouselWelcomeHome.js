@@ -24,7 +24,6 @@ setInterval(function() {
     if(etape >= nbr__img) {
         etape = 0;
     }
-    console.log('salut');
     removeActiveImages();
     img__slider[etape].classList.add('active');
 }, 6000)
