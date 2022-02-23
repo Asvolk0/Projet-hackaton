@@ -2,13 +2,32 @@
 .equipement {
   padding-bottom: 50px;
   & > ul {
-    @include flex(center, center);
+    @include flex(center, flex-start, $wrap: wrap);
     .reassurance {
       font-size: 22px;
       padding: 50px 0;
       margin-top: 50px;
       width: 15%;
-      height: 250px;
+      @include respond("mobile") {
+        font-size: 16px;
+        padding: 20px 0;
+        margin-top: 50px;
+        width: 50%;
+      }
+      @include respond("tab") {
+        width: 30%;
+        padding: 25px 0;
+      }
+      @include respond("tabLand") {
+        width: 20%;
+        padding: 25px 0;
+      }
+      @include respond("smallLaptop") {
+        width: 18%;
+      }
+      @include respond("laptop") {
+        width: 17%;
+      }
       .reassurance_items {
         background-color: $grayLight;
         position: relative;
@@ -26,11 +45,28 @@
         text-align: center;
         padding: 25px 75px;
         line-height: 32px;
+        @include respond("mobile") {
+          padding: 10px;
+        }
+        @include respond("tab") {
+          padding: 25px 30px;
+        }
+        @include respond("tabLand") {
+          padding: 25px 30px;
+        }
+        @include respond("smallLaptop") {
+          padding: 25px 35px;
+        }
+        @include respond("large") {
+          padding: 25px 45px;
+        }
+        @include respond("laptopExtra") {
+          padding: 25px 35px;
+        }
+        @include respond("extraLarge") {
+          padding: 25px 55px;
+        }
       }
     }
   }
-}
-
-.reassurance_item {
-  background-color: red;
 }

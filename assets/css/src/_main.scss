@@ -6,8 +6,26 @@ body {
 .title_2 {
   position: relative;
   @include font("AM_B", 50, center);
+  @include respond("mobile") {
+    font-size: 30px;
+  }
+  @include respond("tab") {
+    font-size: 35px;
+  }
+  @include respond("laptop") {
+    font-size: 45px;
+  }
   &::before {
     @include borderTitle(315);
+    @include respond("mobile") {
+      @include borderTitle(190);
+    }
+    @include respond("tab") {
+      @include borderTitle(220);
+    }
+    @include respond("laptop") {
+      @include borderTitle(280);
+    }
   }
 }
 .btn_secondary {

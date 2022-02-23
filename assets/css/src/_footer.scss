@@ -59,6 +59,9 @@ footer {
     content: "\f062";
     @include font("FontAwesome", 30);
   }
+  &:hover {
+    background-color: $secondaryColor;
+  }
 }
 #backToTop.show {
   opacity: 1;
