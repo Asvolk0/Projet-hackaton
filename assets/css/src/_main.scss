@@ -38,6 +38,22 @@ body {
   @include containerSize(110px, $mxAuto);
   padding: 15px;
   cursor: pointer;
+  @include respond("mobile") {
+    margin: 0 40px;
+    width: 125px;
+  }
+  @include respond("mobileLarge") {
+    width: 125px;
+    margin: 0 40px;
+  }
+  @include respond("tab") {
+    margin: 0 40px;
+    width: 125px;
+  }
+  @include respond("tabLand") {
+    margin: 0 40px;
+    width: 125px;
+  }
 }
 .btn_primary {
   display: block;

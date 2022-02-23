@@ -56,16 +56,16 @@ section:nth-child(2) {
     &:not(:last-child) {
       margin-right: 40px;
       @include respond("mobile") {
-        margin: 0;
+        margin: 0 auto;
       }
       @include respond("mobileLarge") {
-        margin: 0;
+        margin: 0 auto;
       }
       @include respond("tab") {
-        margin: 0;
+        margin: 0 auto;
       }
       @include respond("tabLand") {
-        margin: 0;
+        margin: 0 auto;
       }
     }
     .news_item_content {
