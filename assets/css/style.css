@@ -43,6 +43,7 @@ label, input, textarea, select {
     display: flex;
 }
 
-.map {
+.div{
     width: 100%;
 }
+
