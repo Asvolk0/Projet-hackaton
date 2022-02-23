@@ -1,9 +1,12 @@
+
+
 *{padding:0;margin:0;box-sizing:border-box}
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Jost', sans-serif;
 }
 
 
@@ -14,7 +17,6 @@ from {
     padding: 20px;
     width: 50%;
     max-width: 500px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
