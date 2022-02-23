@@ -10,7 +10,7 @@ body {
     @include borderTitle(315);
   }
 }
-.btn_light {
+.btn_secondary {
   display: block;
   font-size: 18px;
   font-weight: 600;
@@ -19,5 +19,18 @@ body {
   @include borderRadius($radius35);
   @include containerSize(105px, $mxAuto);
   padding: 10px 15px;
+  cursor: pointer;
+}
+.btn_primary {
+  display: block;
+  background-color: $white;
+  font-size: 18px;
+  font-weight: 600;
+  color: $primaryColor;
+  opacity: 0.6;
+  @include borderSetting($borderSolidPrimary);
+  @include borderRadius($radius35);
+  @include containerSize(130px);
+  padding: 10px 5px;
   cursor: pointer;
 }
