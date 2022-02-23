@@ -150,6 +150,10 @@
     @media (max-width: 400px) {
       @content;
     }
+  } @else if ($breakpoint == "mobileLarge") {
+    @media (max-width: 559px) {
+      @content;
+    }
   } @else if($breakpoint == "tabPort") {
     @media (max-width: 767px) {
       @content;

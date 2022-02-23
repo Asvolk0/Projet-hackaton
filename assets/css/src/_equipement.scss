@@ -11,8 +11,8 @@
       @include respond("mobile") {
         font-size: 16px;
         padding: 20px 0;
-        margin-top: 50px;
-        width: 50%;
+        margin-top: 25px;
+        width: 30%;
       }
       @include respond("tab") {
         width: 30%;
@@ -36,9 +36,24 @@
         margin: $mxAuto;
         padding: 15px;
         @include borderRadius($radius20);
+        @include respond("mobile") {
+          width: 70px;
+          height: 70px;
+        }
+        @include respond("tab") {
+          width: 90px;
+          height: 90px;
+        }
         & > img {
           width: 90px;
           @include posAbsoluteCenter();
+          @include borderRadius($radius20);
+          @include respond("mobile") {
+            width: 50px;
+          }
+          @include respond("tab") {
+            width: 70px;
+          }
         }
       }
       & > p {
@@ -47,6 +62,9 @@
         line-height: 32px;
         @include respond("mobile") {
           padding: 10px;
+        }
+        @include respond("mobileLarge") {
+          padding: 25px 0;
         }
         @include respond("tab") {
           padding: 25px 30px;

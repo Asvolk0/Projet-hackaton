@@ -35,8 +35,8 @@ body {
   color: $secondaryColor;
   @include borderSetting($borderSolidSecondary);
   @include borderRadius($radius35);
-  @include containerSize(105px, $mxAuto);
-  padding: 10px 15px;
+  @include containerSize(110px, $mxAuto);
+  padding: 15px;
   cursor: pointer;
 }
 .btn_primary {
