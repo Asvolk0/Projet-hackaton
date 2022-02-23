@@ -2,26 +2,51 @@
 
 *{padding:0;margin:0;box-sizing:border-box}
 
-body {
+.adhesionContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: 'Jost', sans-serif;
 }
+.adhesionFile{
+    padding: 30px 0 ;
+    display: flex;
+    /*
+    placer sur la largeur 
+    */
+    justify-content:space-between;
+    /*
+    placer sur la hauteur
+    */
+    align-items: center;
 
+}
+.adhesionCivil,
+.adhesionCheckBox > div{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
 
-from {
+.adhesionCivil input,
+.adhesionCheckBox input{
+    width: 40px !important;
+}
+
+form {
     display: grid;
     border: 2px solid grey;
     border-radius: 4px;
     padding: 20px;
     width: 50%;
-    max-width: 500px;
+    max-width: 100%;
 }
 
 
 
-input:not([type="color"]) {
+.adhesionContainer input:not([type="color"]) {
 	width: 250px;
 }
 input::placeholder {
@@ -41,11 +66,5 @@ label, input, textarea, select {
 
 }
 
-.check{
-    display: flex;
-}
 
-.div{
-    width: 100%;
-}
 

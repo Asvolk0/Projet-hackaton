@@ -12,16 +12,37 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <h3>Formulaire d'Informations Adherents</h3>
+    <main class="adhesionContainer">
+        <h1>Adhésion</h1>
+        <p>
+            Devenez membre pour pouvoir louer le lieux qui vcous plait afin de réaliser vos projets   
+        </p>
+        <p>
+            La cotisation annuel est de seulement 15 euros.
+        </p>
+        
         <form action="submit_form.php" method="post" enctype="multipart/form-data">
-            <div class="d-inline">
-                <p>Votre civilité:</p>
+            <span>
+                * Champs obligatoires
+            </span>
+            <div class="adhesionFile">
+               <div>
+                    <label for="file">Votre photo portrait (maximum 1 Mo):</label>
+                    <input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple>
+               </div>
+               <div>
+                    <label for="file">Logotype de votre entreprise (maximum 1 Mo):</label>
+                    <input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple> 
+               </div> 
+            </div>
+            <div class="adhesionCivil">
+                <span>
+                    Votre civilité *:
+                </span>
+                <label for="madame">Madame</label>
                 <input id="madame" type="radio" name="choice_radio" value="madame" checked>
-                    <label for="madame">Madame</label>
-                    <input id="monsieur" type="radio" name="choice_radio" value="monsieur">
-                    <label for="monsieur">Monsieur</label>
-                
+                <label for="monsieur">Monsieur</label>
+                <input id="monsieur" type="radio" name="choice_radio" value="monsieur">   
             </div>
 			<!-- input text --> 
 			<label for="name">Votre Prénom</label>
@@ -46,24 +67,23 @@
 			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Décrivez votre entreprise en 3 à 5 lignes"></textarea>
             <label for="textarea">Text</label>
 			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Que proposez-vous comme produits et/ou service? (conseil : soyez aussi consi(e) que possible"></textarea> 
-            <br>
-            <label for="file">Votre photo portrait (maximum 1 Mo):</label>
-			<input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple>
-            <br>
-            <label for="file">Logotype de votre entreprise (maximum 1 Mo):</label>
-			<input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple>  
-            <br>
+           
             <label for="textarea">Votre message</label>
 			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="information complémentaires-Remarques"></textarea>
-            <div>
-                <div class="check">
-                <input type="checkbox" id="cgt">
-                <label for="cgt">Je certifie que toutes ces informations sont exactes</label>
+            <div class="adhesionCheckBox">
+                <div class="">
+                    <input type="checkbox" id="cgt">
+                    <label for="cgt">Je certifie que toutes ces informations sont exactes</label>
                 </div>
-                <input type="checkbox" id="cgt">
-                <label for="cgt">Je certifie être autorisé(e) à demander la publication de ces informations sur le site www.lescale-tierslieu.fr</label>
-                <input type="checkbox" id="cgt">
-                <label for="cgt">Je demande à l'Escale Tiers Lieu de bien vouloir publier ces informations sur le site www.lescale-tierslieu.fr </label>    
+                <div class="">
+                    <input type="checkbox" id="cgt">
+                    <label for="cgt">Je certifie être autorisé(e) à demander la publication de ces informations sur le site www.lescale-tierslieu.fr</label>    
+                </div>
+                <div class="">
+                    <input type="checkbox" id="cgt">
+                    <label for="cgt">Je demande à l'Escale Tiers Lieu de bien vouloir publier ces informations sur le site www.lescale-tierslieu.fr </label>    
+              
+                </div>
             </div>
             <br><br>
 			<input type="submit" value="ENVOYER">
