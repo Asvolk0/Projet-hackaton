@@ -37,3 +37,30 @@ footer {
     }
   }
 }
+
+#backToTop {
+  display: inline-block;
+  background-color: $primaryColor;
+  color: white;
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  z-index: 1000;
+  text-align: center;
+  @include borderRadius(50%);
+  padding: 15px;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  &::after {
+    content: "\f062";
+    @include font("FontAwesome", 30);
+  }
+}
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
