@@ -1,1 +1,48 @@
 *{padding:0;margin:0;box-sizing:border-box}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+from {
+    display: grid;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+input:not([type="color"]) {
+	width: 250px;
+}
+input::placeholder {
+	color: gray;
+	font-size: 13px;
+}
+input[type="submit"] {
+    margin: 20px auto;
+    padding: 10px;
+    width: 200px;
+}
+label, input, textarea, select {
+	display:  block;
+}
+.d-inline>* {
+	display: inline-block;
+
+}
+
+.check{
+    display: flex;
+}
+
+.map {
+    width: 100%;
+}

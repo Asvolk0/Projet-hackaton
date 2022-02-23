@@ -8,6 +8,97 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <header></header>
+    <main>
+        <h3>Formulaire d'Informations Adherents</h3>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data">
+            <div class="d-inline">
+                <p>Votre civilité:</p>
+                <input id="madame" type="radio" name="choice_radio" value="madame" checked>
+                    <label for="madame">Madame</label>
+                    <input id="monsieur" type="radio" name="choice_radio" value="monsieur">
+                    <label for="monsieur">Monsieur</label>
+                
+            </div>
+			<!-- input text --> 
+			<label for="name">Votre Prénom</label>
+			<input type="text" id="name" placeholder="tapez votre Prénom">
+            <label for="name">Votre Nom</label>
+			<input type="text" id="name" placeholder="tapez votre Nom">
+            <label for="textarea">Dénomination commerciale de votre entreprise</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez nom comerciale de votre entreprise"></textarea>
+            <label for="email">email</label>
+			<input type="email" id="email" name="email" required>
+            <label for="name">N de telephone entreprise</label>
+			<input type="text" id="name" placeholder="tapez le numero">
+            <label for="textarea">Adresse complét de votre entreprise</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="ne rien saisir si vous ne souhaitez pas qu'elle soit communiquée publiquement"></textarea>
+            <label for="textarea">URL compléte site internet</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez URL"></textarea>
+            <label for="textarea">URL compléte facebook</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez URL"></textarea>
+            <label for="textarea">URL compléte Linkedin</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez URL"></textarea>
+            <label for="textarea">Text</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Décrivez votre entreprise en 3 à 5 lignes"></textarea>
+            <label for="textarea">Text</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Que proposez-vous comme produits et/ou service? (conseil : soyez aussi consi(e) que possible"></textarea> 
+            <br>
+            <label for="file">Votre photo portrait (maximum 1 Mo):</label>
+			<input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple>
+            <br>
+            <label for="file">Logotype de votre entreprise (maximum 1 Mo):</label>
+			<input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple>  
+            <br>
+            <label for="textarea">Votre message</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="information complémentaires-Remarques"></textarea>
+            <div>
+                <div class="check">
+                <input type="checkbox" id="cgt">
+                <label for="cgt">Je certifie que toutes ces informations sont exactes</label>
+                </div>
+                <input type="checkbox" id="cgt">
+                <label for="cgt">Je certifie être autorisé(e) à demander la publication de ces informations sur le site www.lescale-tierslieu.fr</label>
+                <input type="checkbox" id="cgt">
+                <label for="cgt">Je demande à l'Escale Tiers Lieu de bien vouloir publier ces informations sur le site www.lescale-tierslieu.fr </label>    
+            </div>
+            <br><br>
+			<input type="submit" value="ENVOYER">
+            <br><br><br>
+            <script src="./index.js"></script>
+        </form>
+        <h3>Contactez-nous en ligne!</h3>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
+            <div class="d-inline">
+                <p>Votre civilité:</p>
+                <input id="madame" type="radio" name="choice_radio" value="madame" checked>
+                    <label for="madame">Madame</label>
+                    <input id="monsieur" type="radio" name="choice_radio" value="monsieur">
+                    <label for="monsieur">Monsieur</label>
+
+                
+            </div>
+            <label for="name">Votre Prénom</label>
+			<input type="text" id="name" placeholder="tapez votre Prénom">
+            <label for="name">Votre Nom</label>
+			<input type="text" id="name" placeholder="tapez votre Nom">
+            <label for="email">email</label>
+			<input type="email" id="email" name="email" required>
+            <label for="name">Votre N de téléphone</label>
+			<input type="text" id="name" placeholder="tapez le numero">
+            <br>
+            <label for="textarea">Objet de voutre message</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Text"></textarea>
+            <label for="textarea">Votre message</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Text"></textarea>
+
+            <input type="submit" value="ENVOYER">
+            <br><br><br>
+            <script src="./index.js"></script>
+			
+        </form>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11279.50615103341!2d-0.8018322!3d45.0274317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b7d66c7650ae2e7!2sL'Escale%20Tiers%20Lieu!5e0!3m2!1sfr!2sfr!4v1645606544605!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
     
 </body>
 </html>
