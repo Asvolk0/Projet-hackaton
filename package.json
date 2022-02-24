@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "node-sass -w assets/scss -o assets/css --output-style=compressed",
     "compile2": "node-sass -w nosSallesHackaton/assets/scss -o nosSallesHackaton/assets/css --output-style=compressed",
-    "compile3": "node-sass -w pageLoginHackaton/assets/scss -o pageLoginHackaton/assets/css --output-style=compressed"
+    "compile3": "node-sass -w pageLoginHackaton/assets/scss -o pageLoginHackaton/assets/css --output-style=compressed",
+    "compile4": "node-sass -w actualite/assets/scss -o actualite/assets/css --output-style=compressed"
 
   },
   "author": "",

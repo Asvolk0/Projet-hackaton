@@ -69,3 +69,23 @@ a, li{
         }
     }
 }
+
+.linkImgLogoFooter{
+    width: 100px;
+}
+
+@media screen and (max-width : 950px) {
+    .headerBgImg{
+        .filtre{
+            h1{
+                width: 70%;
+                text-align: center;
+                font-size: 25px;
+            }
+            span{
+                width: 80%;
+                font-size: 20px;
+            }
+        }
+    }
+}
