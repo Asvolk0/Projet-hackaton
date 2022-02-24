@@ -125,6 +125,9 @@ input, textarea, select {
 	font-size: 18px;
     font-family: 'Jost', sans-serif;
 }
+label {
+    margin: 15px 0 5px;
+}
 
 
 textarea {
