@@ -19,7 +19,52 @@ li, a{
     list-style-type: none;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
+.adherent h1{
+    font-size: 25px;
+    padding: 25px;
+    font-weight: bold;
+}
+
+.IAmWho{
+    color: orange;
+    font-size: 30px;
+    padding: 25px;
+}
+
+.adherentTextCenter p{
+    padding: 25px;
+}
+
+main{
+    padding: 25px 0;
+}
+
+.beMembers button{
+    padding: 8px 20px;
+    background: #fff;
+    box-shadow: none;
+    border: 2px solid orange;
+    border-radius: 25px;
+    color: orange;
+    font-size: large;
+    font-weight: bold;
+    transition: 0.2s all;
+    cursor: pointer;
+
+}
+
+.beMembers{
+    padding: 25px;
+}
+
+.beMembers button:hover{
+    background-color: orange;
+    color: #fff;
+}
 
 
 .box:hover {  /*Rotation front/back*/
