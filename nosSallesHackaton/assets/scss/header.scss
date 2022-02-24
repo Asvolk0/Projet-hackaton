@@ -64,6 +64,9 @@ header{
                 li:nth-child(2) a{
                     border-bottom-color: #F6A029;
                 }
+                li:last-child a{
+                    color: #F6A029;
+                }
             }
             .loginBarre{
                 margin-top: 30px;
