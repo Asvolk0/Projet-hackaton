@@ -74,7 +74,6 @@ header{
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            display: none;
             cursor: pointer;
             img{
                 width: 60px;
@@ -179,7 +178,6 @@ header{
                     }
                     .linkImgLogo{
                         img{
-                            width: 90px;
                             display: none;
                         }
                     }

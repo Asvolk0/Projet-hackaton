@@ -7,7 +7,3 @@ function menuBurgerAddEventListener(){
 }
 
 menuBurger.addEventListener('click', menuBurgerAddEventListener);
-
-if(window > '950px'){
-    verticalNav.classList.remove('verticalNavAction');
-}
