@@ -1,0 +1,101 @@
+*{padding:0;margin:0;box-sizing:border-box}
+/*-------------------------PAGE CARD MEMBERS/PRESENTATION-------------------------*/
+.box { /*Div parent*/
+   background-color: transparent;
+    height: 250px;
+    perspective: 1000px;
+    margin: 15px 15px;
+    /*pour reglage*/
+    position: relative;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+li, a{
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+}
+
+
+
+
+.box:hover {  /*Rotation front/back*/
+    transform: rotateY(180deg) scale(110%);
+}
+
+.box-front, .box-back {  /*Que la front ne se voit pas coté back*/
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.box-front {  /*Partie visible avant de passer la souris (front)*/
+    background-color: white;
+    color: #111111;
+    width: 100%;
+}
+
+.box-front p{
+    color: rgb(145, 145, 145);
+}
+
+.box-back {  /*Partie visble aprés passage de souris (back)*/
+    width: 100%;
+    background-color: white;
+    color: #111111;
+    transform: rotateY(180deg);
+}
+
+.box-back h3{
+    background-color: wheat;
+}
+
+ .box-back .logoRs{ /*Taille logo face back*/
+    width: 30px;
+}
+
+.box-back p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.socialNetwork{  /*Icone réseau sociaux taille et disposition*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.box img{  /*Taille image coté front*/
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(22, 140, 236, 0.952);
+    
+}
+
+.loose{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.box-back img{  /*Taille imge coté back*/
+    width: 100px;
+    border: none;
+}
+
+.membersCard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lastMembersCard{
+    display: flex;
+    justify-content: space-around;
+}
+/*------------------------------FIN PAGE CARD MEMBERS/PRESENTATION---------------------------------*/

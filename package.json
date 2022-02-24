@@ -9,7 +9,8 @@
     "compile2": "node-sass -w nosSallesHackaton/assets/scss -o nosSallesHackaton/assets/css --output-style=compressed",
     "compile3": "node-sass -w pageLoginHackaton/assets/scss -o pageLoginHackaton/assets/css --output-style=compressed",
     "compile4": "node-sass -w actualite/assets/scss -o actualite/assets/css --output-style=compressed",
-    "compile5": "node-sass -w reservation/assets/scss -o reservation/assets/css/dist --output-style=compressed"
+    "compile5": "node-sass -w reservation/assets/scss -o reservation/assets/css/dist --output-style=compressed",
+    "compile6": "node-sass -w quiSommesNous/assets/scss -o quiSommesNous/assets/css --output-style=compressed"
 
 
   },

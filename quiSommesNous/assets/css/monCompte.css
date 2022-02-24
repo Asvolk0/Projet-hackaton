@@ -1,0 +1,115 @@
+
+/*------------------DEBUT PAGE MON COMPTE------------------*/
+.borderProfile{
+    width: 700px;
+    height: 850px;
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+
+.countTitle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.profilePicture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid chocolate;
+}
+
+.topProfileCount{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+
+}
+
+.infoProfile h2 {
+    color: chocolate;
+    font-size: 25px;
+}
+
+.infoProfile p{
+    color: chocolate;
+    font-size: 40px;
+}
+
+.workProfile{
+    text-align: center;
+    margin: 80px;
+}
+
+.bottomProfileCount{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.bottomProfileCount div{
+    margin-right: 20px;
+}
+
+.bottomProfileButton{
+    width: 180px;
+    background-color: white;
+    color: chocolate;
+    border: 2px solid chocolate;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 10px ;
+}
+
+.bottomButtonProfileCenter{
+    display: flex;
+    justify-content: center;
+
+}
+
+.workProfile p{
+    font-size: 20px;
+    margin: 40px;
+}
+
+.logoWorkProfile {
+    width: 40px;
+}
+
+.outsideBottomText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.outsideBottomText h3{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+/*-------------------   fin page mon compte---------------------*/
+
+
+
+@media screen and (max-width: 925px){
+
+}
+
+@media screen and (max-width : 400px){
+    .borderProfile{
+        width: 350px;
+    }
+    .workProfile{
+        margin: 0;
+    }
+    .profilePicture{
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+    }
+}

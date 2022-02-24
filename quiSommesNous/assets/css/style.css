@@ -1,0 +1,258 @@
+*{padding:0;margin:0;box-sizing:border-box}
+
+.adhMemb{
+    width: 180px;
+    height: 180px;
+    border: 1px solid orange;
+    border-radius: 90px;
+    filter: grayscale(10);
+}
+
+.socialR img{
+    width: 20px;
+}
+
+
+
+/*-----------PAGE ADMIN-----------*/
+
+section{
+    margin-bottom: 30px;
+}
+
+.titleCenter{/*mise en place des elements*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titleCenter h1{/*mise en dispo du h1*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    color: rgba(22, 140, 236, 0.952);
+}
+
+.titleCenter h2{/*mise en dispo h2*/
+    text-decoration: underline;
+    color: rgb(230, 159, 29);
+}
+
+.adminBoxLeft{/*partie gauche en haut de la div*/
+    width: 50%;
+    height: 249px;
+    background-color: beige;
+}
+.adminMenu{ 
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.adminCategories{/*mise en forme des bouton du menu admin*/
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    margin: 10px;
+    align-items: center;
+    box-shadow: 5px 2px 2px gray;
+}
+
+.adminCategories a{/*mise en place des a*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  rgba(22, 140, 236, 0.952);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.adminCategories img{
+    width: 50px;
+}
+
+.admin{
+    display: flex;
+}
+
+.adminBoxRight{/*partie droite en haut de la div*/
+    width: 50%;
+}
+
+.adminBoxRight img{/*taille icone du tableau*/
+    width: 20px;
+}
+
+.members button{/*mise en forme button partie membre*/
+    border-radius: 30px;
+    padding: 10px 25px;
+    background-color: white;
+    border: 1px solid  chocolate;
+
+}
+
+
+/*----------------FIN DE LA PAGE ADMIN--------------------------*/
+
+/*--------------Modal page admin----------------*/
+
+.modal{/*mise en forme de la modale primaire*/
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalBis{/*mise en forme de la modale secondaire*/
+    width: 50%;
+    height: 50%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent{/*contenant du message de la modale*/
+    width: 80%;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.close{/*fermeture de la modale*/
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{/*permet d'avoir le curseur modifier au passage souris*/
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeModif{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeModif:hover,
+.closeModif:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.butMod{/*curseur souris qui change au passage*/
+    cursor: pointer; 
+}
+
+.revHover{/* inverse du bouton*/
+   background-color: chocolate !important; 
+   color: white;
+}
+
+.revHover:hover{/*hover bouton inverse*/
+    background-color: white !important;
+    color: chocolate;
+}
+
+button{/*bouton*/
+    color: chocolate;
+}
+button:hover{/*hover bouton*/
+    background-color: chocolate;
+    color: white;
+}
+/*---------------------PAGE QUI SOMMES NOUS AVEC LES CARDS-----------------------*/
+
+
+.whoIAm{
+    width: 100%;
+    /*height: 300px;*/
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.whoIAm > h2{
+    color: orange;
+    font-size: 100px;
+
+}
+
+.adherentTextCenter{
+    width: 75%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 110px 0;
+}
+
+.adherent h1{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.beMembers{
+    display: flex;
+    justify-content: center;
+}
+
+.beMembers button{
+    width: 180px;
+    color:  rgba(22, 140, 236, 0.952);
+    background-color: #fefefe;
+    border: 2px solid   rgba(22, 140, 236, 0.952);
+    border-radius: 80px;
+    padding: 10px;
+}
+
+.beMembers :hover{
+    color: #fefefe;
+    background-color:rgba(22, 140, 236, 0.952);
+}
+/*----------------FIN QUI SOMMES NOUS-------------------*/
+/*--------------MEDIA QUERY QUI SOMMES NOUS------------------*/
+@media screen and (max-width: 400px){
+    .whoIAm h2{
+        font-size: 30px;
+    }
+    .whoIAm{
+        padding: 10px;
+    }
+    .adherentTextCenter{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 20px 0;
+        height: 250px;
+    }
+    .adherent h1{
+        font-size: 25px;
+        text-decoration: underline;
+        text-decoration-color: orange;
+    }
+    .box{
+        width: 120px;
+    }
+    
+}
