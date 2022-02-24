@@ -11,9 +11,8 @@
     "compile4": "node-sass -w actualite/assets/scss -o actualite/assets/css --output-style=compressed",
     "compile5": "node-sass -w reservation/assets/scss -o reservation/assets/css/dist --output-style=compressed",
     "compile6": "node-sass -w quiSommesNous/assets/scss -o quiSommesNous/assets/css --output-style=compressed",
-    "compile7": "node-sass -w adhesion/assets/css/src -o adhesion/assets/css/dist --output-style=compressed"
-
-
+    "compile7": "node-sass -w adhesion/assets/css/src -o adhesion/assets/css/dist --output-style=compressed",
+    "compile8": "node-sass -w formulaireDeContact/assets/scss -o formulaireDeContact/assets/css --output-style=compressed"
   },
   "author": "",
   "license": "ISC",

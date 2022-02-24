@@ -1,0 +1,34 @@
+section.reservation {
+  .title_2 {
+    margin: 150px;
+    @include font("JOST_R", 50);
+    &::before {
+      @include borderTitle(205);
+    }
+    @include respond("mobile") {
+      margin: 100px;
+    }
+    @include respond("tab") {
+      margin: 100px;
+    }
+    @include respond("tabLand") {
+      margin: 100px;
+    }
+    @include respond("laptop") {
+      margin: 100px;
+    }
+  }
+  & > img {
+    display: block;
+    @include containerSize(80%, 0 auto 80px);
+  }
+  .btn_secondary {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto 80px;
+    &:hover {
+      background-color: $secondaryColor;
+      color: $white;
+    }
+  }
+}
