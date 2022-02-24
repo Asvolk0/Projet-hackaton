@@ -39,37 +39,39 @@
                 <span>
                     Votre civilité *:
                 </span>
-                <label for="madame">Madame</label>
                 <input id="madame" type="radio" name="choice_radio" value="madame" checked>
-                <label for="monsieur">Monsieur</label>
-                <input id="monsieur" type="radio" name="choice_radio" value="monsieur">   
+                <label for="madame">Madame</label>
+                <input id="monsieur" type="radio" name="choice_radio" value="monsieur"> 
+                <label for="monsieur">Monsieur</label>  
             </div>
 			<!-- input text --> 
-			<label for="name">Votre Prénom</label>
-			<input type="text" id="name" placeholder="tapez votre Prénom">
-            <label for="name">Votre Nom</label>
-			<input type="text" id="name" placeholder="tapez votre Nom">
+            <div class="adhesionName">
+                <label for="name">Votre Prénom</label>
+                <input type="text" id="name" placeholder="tapez votre Prénom">  
+                <label for="name">Votre Nom</label>	
+                <input type="text" id="name" placeholder="tapez votre Nom">		        
+            </div>
             <label for="textarea">Dénomination commerciale de votre entreprise</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez nom comerciale de votre entreprise"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez nom comerciale de votre entreprise"></textarea>
             <label for="email">email</label>
 			<input type="email" id="email" name="email" required>
             <label for="name">N de telephone entreprise</label>
 			<input type="text" id="name" placeholder="tapez le numero">
             <label for="textarea">Adresse complét de votre entreprise</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="ne rien saisir si vous ne souhaitez pas qu'elle soit communiquée publiquement"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="ne rien saisir si vous ne souhaitez pas qu'elle soit communiquée publiquement"></textarea>
             <label for="textarea">URL compléte site internet</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez URL"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
             <label for="textarea">URL compléte facebook</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez URL"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
             <label for="textarea">URL compléte Linkedin</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="tapez URL"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
             <label for="textarea">Text</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Décrivez votre entreprise en 3 à 5 lignes"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="Décrivez votre entreprise en 3 à 5 lignes"></textarea>
             <label for="textarea">Text</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Que proposez-vous comme produits et/ou service? (conseil : soyez aussi consi(e) que possible"></textarea> 
+			<textarea name="textarea" id="textarea" rows="5" placeholder="Que proposez-vous comme produits et/ou service? (conseil : soyez aussi consi(e) que possible"></textarea> 
            
             <label for="textarea">Votre message</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="information complémentaires-Remarques"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="information complémentaires-Remarques"></textarea>
             <div class="adhesionCheckBox">
                 <div class="">
                     <input type="checkbox" id="cgt">
@@ -90,16 +92,16 @@
             <br><br><br>
             <script src="./index.js"></script>
         </form>
-        <h3>Contactez-nous en ligne!</h3>
+        <h1>Contact</h1>
         <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
             <div class="adhesionCivil">
                 <span>
                     Votre civilité *:
                 </span>
-                <label for="madame">Madame</label>
                 <input id="madame" type="radio" name="choice_radio" value="madame" checked>
-                <label for="monsieur">Monsieur</label>
-                <input id="monsieur" type="radio" name="choice_radio" value="monsieur">   
+                <label for="madame">Madame</label>
+                <input id="monsieur" type="radio" name="choice_radio" value="monsieur"> 
+                <label for="monsieur">Monsieur</label>   
             </div>
             
             <label for="name">Votre Prénom</label>
@@ -112,20 +114,17 @@
 			<input type="text" id="name" placeholder="tapez le numero">
             <br>
             <label for="textarea">Objet de voutre message</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Text"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="Text"></textarea>
             <label for="textarea">Votre message</label>
-			<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Text"></textarea>
+			<textarea name="textarea" id="textarea" rows="5" placeholder="Text"></textarea>
             
             <input type="submit" value="ENVOYER">
             <br><br><br>
         </form>
-           <section>
-               <div>
-           
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11279.50615103341!2d-0.8018322!3d45.0274317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b7d66c7650ae2e7!2sL'Escale%20Tiers%20Lieu!5e0!3m2!1sfr!2sfr!4v1645606544605!5m2!1sfr!2sfr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            
-                </div>
-            </section>
+        <h1>Coordonnées</h1>
+         <section id="map-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11279.50615103341!2d-0.8018322!3d45.0274317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b7d66c7650ae2e7!2sL'Escale%20Tiers%20Lieu!5e0!3m2!1sfr!2sfr!4v1645606544605!5m2!1sfr!2sfr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
         <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
             <input type="submit" value="Devenir membre">
             <script src="./index.js"></script>

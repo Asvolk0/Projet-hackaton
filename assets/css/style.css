@@ -32,7 +32,19 @@
 
 .adhesionCivil input,
 .adhesionCheckBox input{
-    width: 60px !important;
+    width: 30px !important;
+}
+
+.adhesionName > div{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 250px;
+ 
+}
+.adhesionName input text{
+    width: 250px;
 }
 
 form {
@@ -47,7 +59,7 @@ form {
 
 
 .adhesionContainer input:not([type="color"]) {
-	width: 250px;
+	width: 100%;
 }
 input::placeholder {
 	color: gray;
@@ -61,10 +73,16 @@ input[type="submit"] {
 label, input, textarea, select {
 	display:  block;
 }
+textarea {
+    width: 100%;
+}
 .d-inline>* {
 	display: inline-block;
 
 }
 
-
+/* MAP */
+#map-container {
+    width: 100%;
+}
 
