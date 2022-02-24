@@ -26,7 +26,64 @@ setInterval(function() {
     }
     removeActiveImages();
     img__slider[etape].classList.add('active');
-}, 6000)
+}, 6000);
 //      ^
 //      |
 // sert à indiquer le nombre de centieme de seconde à attendre avant que la fonction s'enclenche
+
+
+
+
+
+const articleContainer = document.getElementsByClassName('articleContainer');
+
+let nb_carousel = 0;
+
+// prend le nombre de slider
+let nb__img = articleContainer.length;
+
+const precedent = document.querySelector('.arrowCardCarouselLeft');
+const suivant = document.querySelector('.arrowCardCarouselRight');
+
+function enleverActiveImagesCard() {
+    // fonction qui supprime la class "active"
+    for(let i = 0 ; i < nb__img ; i++) {
+        articleContainer[i].classList.remove('cardActive');
+    }
+}
+
+// écoute un clique sur la variable suivant
+suivant.addEventListener('click', function() {
+    // ajoute une unité à la varible étape
+    nb_carousel++;
+
+    //si étape dépasse le nombre d'image alors on revient à létape 0, soit la premiere image
+    if(nb_carousel >= nb__img) {
+        nb_carousel = 0;
+    }
+
+    // activation de la fonction qui supprime la class "active"
+    enleverActiveImagesCard();
+
+    //ajoute la class "active" à l'image suivante au clique du bouton
+    articleContainer[nb_carousel].classList.add('cardActive');
+})
+
+
+//écoute un clique sur la variable précédent 
+precedent.addEventListener('click', function() {
+
+    // supprime une unité à la variable étape
+    nb_carousel--;
+
+    // si la variable étape est inférieur à 0, alors étape prend la valeur du nombre d'image et supprime une unité
+    if(nb_carousel < 0) {
+        nb_carousel = nb__img - 1;
+    }
+
+    // fonction qui supprime la class "active"
+    enleverActiveImagesCard();
+
+    // ajoute la class "active" lors du clique du bouton précédent
+    articleContainer[nb_carousel].classList.add('cardActive');
+})
