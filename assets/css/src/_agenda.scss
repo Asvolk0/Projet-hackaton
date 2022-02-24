@@ -23,7 +23,12 @@ section.reservation {
     @include containerSize(80%, 0 auto 80px);
   }
   .btn_secondary {
+    width: 200px;
     text-align: center;
     margin: 0 auto 80px;
+    &:hover {
+      background-color: $secondaryColor;
+      color: $white;
+    }
   }
 }

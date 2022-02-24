@@ -1,0 +1,215 @@
+// FORMULAIRE D'ADHESION
+section.adhesion {
+  padding-bottom: 80px;
+  .title_2 {
+    margin-top: 50px;
+    @include font("JOST_R", 50);
+    @include respond("mobile") {
+      font-size: 26px;
+    }
+    @include respond("tab") {
+      font-size: 34px;
+    }
+    @include respond("tabLand") {
+      font-size: 42px;
+    }
+    &::before {
+      @include borderTitle(160);
+      @include respond("mobile") {
+        @include borderTitle(85);
+      }
+      @include respond("tab") {
+        @include borderTitle(110);
+      }
+      @include respond("tabLand") {
+        @include borderTitle(135);
+      }
+    }
+  }
+  .adhesionIntro {
+    text-align: center;
+    @include paragraphe(22, 28, 1);
+    padding-top: 50px;
+    @include containerSize(40%, $mxAuto);
+    @include respond("mobile") {
+      font-size: 14px;
+      width: 95%;
+    }
+    @include respond("tab") {
+      font-size: 16px;
+      width: 95%;
+    }
+    @include respond("tabLand") {
+      font-size: 18px;
+      width: 80%;
+    }
+    @include respond("smallLaptop") {
+      font-size: 20px;
+      width: 70%;
+    }
+    @include respond("laptop") {
+      font-size: 22px;
+      width: 60%;
+    }
+    & > p {
+      & > span {
+        color: $primaryColor;
+        font-weight: 600;
+      }
+    }
+  }
+  & > form {
+    padding: 30px 120px;
+    @include flex(center, center, column);
+    @include containerSize(40%, 70px auto 0);
+    @include borderSetting($borderSolidDark);
+    @include respond("mobile") {
+      padding: 30px 70px;
+    }
+    @include respond("tab") {
+      padding: 30px 80px;
+    }
+    @include respond("tabLand") {
+      padding: 30px 90px;
+    }
+    @include respond("laptop") {
+      padding: 30px 100px;
+    }
+    & > input {
+      font-size: 24px;
+      margin: 25px 0;
+      width: 100%;
+      height: 35px;
+      border: none;
+      border-bottom: $borderSolidDark;
+      &::placeholder {
+        @include font("JOST_R", 24);
+        opacity: 0.6;
+        letter-spacing: 1px;
+        @include respond("mobile") {
+          font-size: 12px;
+        }
+        @include respond("tab") {
+          font-size: 14px;
+        }
+        @include respond("tabLand") {
+          font-size: 18px;
+        }
+        @include respond("laptop") {
+          font-size: 22px;
+        }
+      }
+      @include respond("mobile") {
+        font-size: 12px;
+      }
+      @include respond("tab") {
+        font-size: 14px;
+      }
+      @include respond("tabLand") {
+        font-size: 18px;
+      }
+      @include respond("laptop") {
+        font-size: 22px;
+      }
+    }
+    .btn_primary {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 50px 0 25px;
+      width: 200px;
+      opacity: 1;
+      &:hover {
+        color: $white;
+        background: $primaryColor;
+      }
+      @include respond("mobile") {
+        font-size: 14px;
+        width: 140px;
+      }
+      @include respond("tab") {
+        font-size: 16px;
+        width: 160px;
+      }
+      @include respond("tabLand") {
+        font-size: 18px;
+        width: 180px;
+      }
+    }
+  }
+  .firstLabels {
+    @include flex(space-between, center);
+    width: 100%;
+    @include respond("mobile") {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include respond("tab") {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include respond("tabLand") {
+      font-size: 12px;
+    }
+    @include respond("laptop") {
+      font-size: 12px;
+    }
+    & > input {
+      font-size: 24px;
+      border: none;
+      border-bottom: $borderSolidDark;
+      padding: 0;
+      margin: 25px 0;
+      height: 45px;
+      width: 40%;
+      @include respond("mobile") {
+        width: 100%;
+        font-size: 12px;
+      }
+      @include respond("tab") {
+        width: 100%;
+        font-size: 14px;
+      }
+      @include respond("tabLand") {
+        font-size: 18px;
+      }
+      @include respond("laptop") {
+        font-size: 22px;
+      }
+      &::placeholder {
+        @include font("JOST_R", 24);
+        opacity: 0.6;
+        letter-spacing: 1px;
+        @include respond("mobile") {
+          font-size: 12px;
+        }
+        @include respond("tab") {
+          font-size: 14px;
+        }
+        @include respond("tabLand") {
+          font-size: 18px;
+        }
+        @include respond("laptop") {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .btn_secondary {
+    font-weight: 600;
+    text-align: center;
+    width: 200px;
+    margin: 90px auto 0;
+    @include respond("mobile") {
+      font-size: 14px;
+      width: 120px;
+    }
+    @include respond("tab") {
+      font-size: 16px;
+      width: 140px;
+    }
+    @include respond("tabLand") {
+      font-size: 18px;
+      width: 160px;
+    }
+  }
+}
