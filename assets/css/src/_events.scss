@@ -1,0 +1,39 @@
+// CATEGORIE ACTUALITES EVENEMENTS
+// .bannerActus {
+//   @include background();
+// }
+section.events {
+  .title_2 {
+    text-align: left;
+    padding-left: 16%;
+    @include font("JOST_R", 50);
+    &::before {
+      @include borderTitle(385);
+    }
+  }
+  .actualites {
+    flex-wrap: wrap;
+    .news_items {
+      position: relative;
+      flex-basis: 33%;
+      margin-bottom: 45px;
+      &:not(:nth-child(2n + 1)) {
+        margin-right: 0;
+      }
+      .date_news {
+        padding-bottom: 20px;
+      }
+      .news_title {
+        padding-bottom: 35px;
+      }
+      .socialIcons {
+        & > ul {
+          @include flex(center, center);
+          & > li:not(:last-child) {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}

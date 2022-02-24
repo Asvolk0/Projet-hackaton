@@ -91,7 +91,7 @@
 @mixin borderTitle($borderW) {
   content: "";
   position: absolute;
-  border: $borderSolidPrimary;
+  border: 1px solid $primaryColor;
   width: #{$borderW}px;
   bottom: 0;
 }

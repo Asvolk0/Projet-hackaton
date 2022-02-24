@@ -71,6 +71,7 @@ section:nth-child(2) {
     .news_item_content {
       padding: 35px 25px;
       .date_news {
+        font-size: 14px;
         color: $gray;
         padding-bottom: 5px;
         @include respond("mobile") {
@@ -79,14 +80,11 @@ section:nth-child(2) {
         @include respond("mobileLarge") {
           font-size: 12px;
         }
-        @include respond("tab") {
-          font-size: 14px;
-        }
       }
       .news_title {
         color: $secondaryColor;
         padding-bottom: 20px;
-        @include font("JOST_R", 24);
+        @include font("JOST_R", 22);
         @include respond("mobile") {
           font-size: 15px;
         }
