@@ -95,7 +95,7 @@ footer {
         }
         @include respond("tab") {
           @include flex(space-around, center);
-          font-size: 15px;
+          font-size: 16px;
         }
       }
       & > input {
@@ -116,7 +116,7 @@ footer {
         @include respond("tab") {
           @include flex(space-around, center);
           margin-left: 60px;
-          width: 260px;
+          width: 280px;
         }
       }
       & > ::placeholder {

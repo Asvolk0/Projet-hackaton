@@ -35,28 +35,28 @@ body {
   color: $secondaryColor;
   @include borderSetting($borderSolidSecondary);
   @include borderRadius($radius35);
-  @include containerSize(116px, $mxAuto);
+  @include containerSize(170px, $mxAuto);
   padding: 15px;
   cursor: pointer;
   @include respond("mobile") {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 40px;
-    width: 175px;
+    width: 170px;
   }
   @include respond("mobileLarge") {
-    font-size: 30px;
-    width: 175px;
+    font-size: 20px;
+    width: 170px;
     margin: 0 40px;
   }
   @include respond("tab") {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 40px;
-    width: 175px;
+    width: 170px;
   }
   @include respond("tabLand") {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 40px;
-    width: 175px;
+    width: 170px;
   }
 }
 .btn_primary {
