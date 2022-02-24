@@ -1,0 +1,74 @@
+// Paramètres généraux
+body {
+  color: $dark;
+  @include font("JOST_L", 16);
+}
+.title_2 {
+  position: relative;
+  @include font("AM_B", 50, center);
+  @include respond("mobile") {
+    font-size: 30px;
+  }
+  @include respond("tab") {
+    font-size: 35px;
+  }
+  @include respond("laptop") {
+    font-size: 45px;
+  }
+  &::before {
+    @include borderTitle(315);
+    @include respond("mobile") {
+      @include borderTitle(190);
+    }
+    @include respond("tab") {
+      @include borderTitle(220);
+    }
+    @include respond("laptop") {
+      @include borderTitle(280);
+    }
+  }
+}
+.btn_secondary {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: $secondaryColor;
+  @include borderSetting($borderSolidSecondary);
+  @include borderRadius($radius35);
+  @include containerSize(170px, $mxAuto);
+  padding: 15px;
+  cursor: pointer;
+  @include respond("mobile") {
+    font-size: 20px;
+    margin: 0 40px;
+    width: 170px;
+  }
+  @include respond("mobileLarge") {
+    font-size: 20px;
+    width: 170px;
+    margin: 0 40px;
+  }
+  @include respond("tab") {
+    font-size: 20px;
+    margin: 0 40px;
+    width: 170px;
+  }
+  @include respond("tabLand") {
+    font-size: 20px;
+    margin: 0 40px;
+    width: 170px;
+  }
+}
+.btn_primary {
+  display: block;
+  background-color: $white;
+  font-size: 18px;
+  font-weight: 600;
+  color: $primaryColor;
+  opacity: 0.6;
+  @include borderSetting($borderSolidPrimary);
+  @include borderRadius($radius35);
+  @include containerSize(130px);
+  padding: 10px 5px;
+  cursor: pointer;
+}

@@ -1,4 +1,25 @@
+*{padding: 0;margin: 0;box-sizing: border-box;scroll-behavior: smooth;}
 
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../../../assets/font/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "ArimaMadurai Bold";
+    src: url("../../../assets/font/Arima_Madurai/ArimaMadurai-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("../../../assets/font/Jost/static/Jost-Regular.ttf");
+}
+
+a, li{
+    list-style-type: none;
+    text-decoration: none;
+    color: #141414;
+}
 
 main{
     & > p{
