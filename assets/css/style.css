@@ -12,6 +12,16 @@ white: #fff
 input {
     font-family: 'jost', sans-serif;
 }
+.orange{
+    background-color: transparent;
+    border: solid 1px #f6a029;
+    color: #f6a029;
+}
+.bleu {
+    background-color: transparent;
+    border: solid 1px #4a9ec0;
+    color: #4a9ec0;
+}
 .adhesionName input,
 .adhesionEmail input,
 .adhesionObjet input{
@@ -62,6 +72,7 @@ input {
 .adhesionCivilTitle{
     font-size: 18px;
     color: gray; 
+    padding: 10px 0;
 }
 
 .adhesionName,
@@ -71,14 +82,14 @@ input {
     justify-content:space-between;
     align-items: center;
     width: 100%;
-    padding: 30px; 0;
+    padding: 30px 0;
  
 }
 
 .entreprise input{
     border: none;
     border-bottom: 2px solid gray;
-    width: 95%;
+    width: 100%;
 
 }
 
@@ -91,7 +102,7 @@ input {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 30px; 0;
+    padding: 30px 0;
 
 }
 
@@ -117,16 +128,23 @@ input[type="submit"] {
     margin: 20px auto;
     padding: 10px;
     width: 200px;
-    
+    border-radius: 20px;
 }
+input[type="file"] {
+    border-radius: 6px;
+    border: solid 1px #4a9ec0;
+    width: 250px;
+    background-color: transparent;
+}
+
+
 input, textarea, select {
 	display:  block;
     color: gray;
 	font-size: 18px;
     font-family: 'Jost', sans-serif;
-}
-label {
-    margin: 15px 0 5px;
+    padding: 4px 0;
+    margin: 10px 0;
 }
 
 
