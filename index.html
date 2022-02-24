@@ -27,39 +27,38 @@
             </span>
             <div class="adhesionFile">
                <div>
-                    <label for="file">Votre photo portrait (maximum 1 Mo):</label>
+                    <label class="adhesionFileTitle" for="file">Photo de profil</label>
                     <input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple>
                </div>
                <div>
-                    <label for="file">Logotype de votre entreprise (maximum 1 Mo):</label>
+                    <label class="adhesionFileTitle" for="file">Logo de l'entreprise</label>
                     <input type="file" id="file" accept="image/png, image/jpg, image/jpeg" multiple> 
                </div> 
             </div>
             <div class="adhesionCivil">
-                <span>
+                <span class="adhesionCivilTitle">
                     Votre civilité *:
                 </span>
                 <input id="madame" type="radio" name="choice_radio" value="madame" checked>
-                <label for="madame">Madame</label>
+                <label class="adhesionCivilTitle" for="madame">Madame</label>
                 <input id="monsieur" type="radio" name="choice_radio" value="monsieur"> 
-                <label for="monsieur">Monsieur</label>  
+                <label class="adhesionCivilTitle" for="monsieur">Monsieur</label>  
             </div>
 			<!-- input text --> 
             <div class="adhesionName">
-                <label for="name">Votre Prénom</label>
-                <input type="text" id="name" placeholder="tapez votre Prénom">  
+                <input type="text" id="name" placeholder="Prénom">  
                 <label for="name">Votre Nom</label>	
                 <input type="text" id="name" placeholder="tapez votre Nom">		        
             </div>
-            <label for="textarea">Dénomination commerciale de votre entreprise</label>
+            <label for="textarea">Dénomination Commerciale</label>
 			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez nom comerciale de votre entreprise"></textarea>
-            <label for="email">email</label>
+            <label for="email">Email Entreprise*</label>
 			<input type="email" id="email" name="email" required>
-            <label for="name">N de telephone entreprise</label>
+            <label for="name">Numeros de Téléphone Entreprise*</label>
 			<input type="text" id="name" placeholder="tapez le numero">
-            <label for="textarea">Adresse complét de votre entreprise</label>
+            <label for="textarea">Adresse Complète de votre Entreprise</label>
 			<textarea name="textarea" id="textarea" rows="5" placeholder="ne rien saisir si vous ne souhaitez pas qu'elle soit communiquée publiquement"></textarea>
-            <label for="textarea">URL compléte site internet</label>
+            <label for="textarea">URL compléte Site internet*</label>
 			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
             <label for="textarea">URL compléte facebook</label>
 			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
