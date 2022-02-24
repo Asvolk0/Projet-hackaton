@@ -70,7 +70,7 @@ section{
     margin-bottom: 5px;
 }
 
-.box img{  /*Taille image coté front*/
+.box img{ 
     width: 100px;
     border-radius: 50%;
     border: 2px solid rgba(22, 140, 236, 0.952);
