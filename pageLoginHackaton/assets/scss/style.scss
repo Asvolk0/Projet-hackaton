@@ -1,0 +1,225 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Abril Fatface";
+    src: url("../font/Abril_Fatface/AbrilFatface-Regular.ttf");
+}
+
+a, li{
+    list-style-type: none;
+    text-decoration: none;
+    color: #141414;
+}
+
+body{
+    color: #141414;
+    overflow: hidden;
+    header{
+        // position: fixed;
+        width: 100%;
+        nav{
+            width: 100%;
+            padding: 25px;
+            #menuBurger{
+                display: none;
+                z-index: 1;
+                span{
+                    width: 22px;
+                    height: 3px;
+                    background: #414141;
+                    border-radius: 3px;
+                    transition: 0.2s all;
+                }
+            }
+            .verticalNav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .linkImgLogo{
+                    img{
+                        width: 90px;
+                    }
+                }
+                .linkNavBarre{
+                    display: flex;
+                    justify-content: space-between;
+                    min-width: 500px;
+                    margin-left: 5%;
+                    margin-top: 30px;
+                    li{
+                        padding: 3px 20px;
+                        a{
+                            font-family: 'Roboto-Medium', sans-serif;
+                            font-size: 23px;
+                            padding: 3px 0;
+                            border-bottom: 1px solid transparent;
+                            position: relative;
+                            color: #333333;
+                        }
+                        a::before{
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 0;
+                            background: #F6A029;
+                            transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+                            height: 1px;
+                        }
+                        a:hover:before{
+                            width: 100%;
+                        }
+                    }
+                    li:first-child a{
+                        border-bottom-color: #F6A029;
+                    }
+                }
+                .loginBarre{
+                    margin-top: 30px;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+        .headerBgImg{
+            width: 100%;
+            height: 680px;
+            background: center/cover no-repeat url(../img/headerBgLogin);
+            .filtre{
+                height: 100%;
+                background: #00000090;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: #fff;
+                h1{
+                    text-align: center;
+                    font-size: 45px;
+                    width: 590px;
+                    margin-bottom: 50px;
+                    position: relative;
+                    font-family: "Abril Fatface", sans-serif;
+                    font-weight: 300;
+                }
+                h1::after{
+                    content: "";
+                    position: absolute;
+                    top: 105%;
+                    left: 33%;
+                    width: 33%;
+                    height: 1px;
+                    background: #F6A029;
+                }
+                span{
+                    width: 850px;
+                    text-align: center;
+                    font-size: 26px;
+                    margin-bottom: 50px;
+                    font-family: "Roboto Medium", sans-serif;
+                }
+                a{
+                    padding: 10px 20px;
+                    border-radius: 25px;
+                    background: #fff;
+                    color: #F6A029;
+                    transition: 0.2s all;
+                    font-family: "Roboto Medium", sans-serif;
+                    font-size: 20px;
+                    &:hover{
+                        background: #F6A029;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 925px) {
+
+    body{
+        header{
+            height: 100%;
+            nav{
+                display: flex;
+                justify-content: flex-start;
+                height: 100%;
+                position: relative;
+                #menuBurger{
+                    height: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                }
+                .verticalNav{
+                    position: absolute;
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .menuBurgerAction{
+        position: fixed;
+        left: 30%;
+    }
+
+    .menuBurgerAction span{
+        position: fixed;
+        top: 20px;
+    }
+
+    .menuBurgerAction span:first-child{
+        animation: rotateAnimFirstChild 0.5s;
+    }
+
+    .menuBurgerAction span:last-child{
+        animation: rotateAnimLastChild 0.5s;
+    }
+
+    @keyframes rotateAnimFirstChild {
+        to{
+            transform: rotate(0deg);
+        }
+        from{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotateAnimLastChild {
+        to{
+            transform: rotate(0deg);
+        }
+        from{
+            transform: rotate(360deg);
+        }
+    }
+    
+    .menuBurgerAction span:nth-child(1){
+        transform: translateY(50%);
+        transform: rotate(45deg);
+    }
+    
+    .menuBurgerAction span:nth-child(2){
+        opacity: 0;
+    }
+    
+    .menuBurgerAction span:nth-child(3){
+        transform: translateY(-50%);
+        transform: rotate(-45deg);
+    }
+
+
+    .verticalNavAction{
+        left: -25px !important;
+    }
+}
