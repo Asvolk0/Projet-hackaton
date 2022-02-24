@@ -12,10 +12,13 @@ white: #fff
 input {
     font-family: 'jost', sans-serif;
 }
-.adhesionName input {
+.adhesionName input,
+.adhesionEmail input,
+.adhesionObjet input{
     border: none;
     border-bottom: 2px solid gray;
     font-size: 18px;
+    width: 270px;
     
 }
 
@@ -48,7 +51,7 @@ input {
 .adhesionCheckBox > div{
     display: flex;
     align-items: center;
-    padding: 5ps 0 30px;
+    padding: 5px 0 30px;
     font-size: 14px;
 }
 
@@ -61,20 +64,39 @@ input {
     color: gray; 
 }
 
-.adhesionName > div{
+.adhesionName,
+.adhesionEmail{
     
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 250px;
+    width: 100%;
+    padding: 30px; 0;
  
 }
-.adhesionName input text{
-    width: 250px;
+
+.entreprise input{
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 95%;
+
+}
+
+.adhesionEmail,
+.adhesionObjet{
+    font-size: 18px;
+    color: gray; 
+}
+.adhesionObjet{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px; 0;
+
 }
 
 form {
-    display: grid;
+    display: block;
     border: 2px solid grey;
     border-radius: 4px;
     padding: 20px;
@@ -89,18 +111,25 @@ form {
 } */
 input::placeholder {
 	color: gray;
-	font-size: 13px;
+	font-size: 18px;
 }
 input[type="submit"] {
     margin: 20px auto;
     padding: 10px;
     width: 200px;
+    
 }
-label, input, textarea, select {
+input, textarea, select {
 	display:  block;
+    color: gray;
+	font-size: 18px;
+    font-family: 'Jost', sans-serif;
 }
+
+
 textarea {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
 }
 .d-inline>* {
 	display: inline-block;

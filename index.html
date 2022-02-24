@@ -47,30 +47,34 @@
 			<!-- input text --> 
             <div class="adhesionName">
                 <input type="text" id="name" placeholder="Prénom">  
-                <label for="name">Votre Nom</label>	
-                <input type="text" id="name" placeholder="tapez votre Nom">		        
+                <input type="text" id="name" placeholder="Nom">		        
             </div>
-            <label for="textarea">Dénomination Commerciale</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez nom comerciale de votre entreprise"></textarea>
-            <label for="email">Email Entreprise*</label>
-			<input type="email" id="email" name="email" required>
-            <label for="name">Numeros de Téléphone Entreprise*</label>
-			<input type="text" id="name" placeholder="tapez le numero">
-            <label for="textarea">Adresse Complète de votre Entreprise</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="ne rien saisir si vous ne souhaitez pas qu'elle soit communiquée publiquement"></textarea>
-            <label for="textarea">URL compléte Site internet*</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
-            <label for="textarea">URL compléte facebook</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
-            <label for="textarea">URL compléte Linkedin</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="tapez URL"></textarea>
-            <label for="textarea">Text</label>
+            <div class="entreprise">
+                <input type="text" id="entreprise" placeholder="Dénomination commerciale">
+                <input type="email" id="email" name="email" placeholder="Email Entreprice*" required>
+                <input type="text" id="name" placeholder="Numero de Téléphone Entreprice*">
+                <input type="text" id="name" placeholder="Adresse Complète de votre Entreprise (ne rien saisir si vous ne souhaitez rien communiquer)">
+                <input type="text" id="entreprise" placeholder="URL compléte Site internet*">
+                <input type="text" id="entreprise" placeholder="URL compléte facebook">
+                <input type="text" id="entreprise" placeholder="URL compléte Linkedin">
+
+            </div>
+            
+         
 			<textarea name="textarea" id="textarea" rows="5" placeholder="Décrivez votre entreprise en 3 à 5 lignes"></textarea>
-            <label for="textarea">Text</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="Que proposez-vous comme produits et/ou service? (conseil : soyez aussi consi(e) que possible"></textarea> 
+      
+			<textarea name="textarea" id="textarea" rows="5" placeholder="Que proposez-vous comme produits et/ou service? (conseil : soyez aussi consise que possible)*"></textarea> 
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password">
+                <span class="error-password"></span>
+
+                <label for="confirmPassword">Confirmer mot de passe</label>
+                <input type="password" id="confirmPassword">
+                <span class="error-confirmPassword"></span>
+
+
+            <textarea name="textarea" id="textarea" rows="5" placeholder="Information Complémentaires"></textarea>
            
-            <label for="textarea">Votre message</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="information complémentaires-Remarques"></textarea>
             <div class="adhesionCheckBox">
                 <div class="">
                     <input type="checkbox" id="cgt">
@@ -89,36 +93,39 @@
             <br><br>
 			<input type="submit" value="ENVOYER">
             <br><br><br>
-            <script src="./index.js"></script>
+            <script src=".../script.js"></script>
+        </form>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data">
+            <input type="submit" value="Devenir membre avec hellopass">
+            <script src=".../script.js"></script>
         </form>
         <h1>Contact</h1>
         <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
             <div class="adhesionCivil">
-                <span>
+                <span class="adhesionCivilTitle">
                     Votre civilité *:
                 </span>
                 <input id="madame" type="radio" name="choice_radio" value="madame" checked>
-                <label for="madame">Madame</label>
+                <label class="adhesionCivilTitle" for="madame">Madame</label>
                 <input id="monsieur" type="radio" name="choice_radio" value="monsieur"> 
-                <label for="monsieur">Monsieur</label>   
+                <label class="adhesionCivilTitle" for="monsieur">Monsieur</label>  
             </div>
-            
-            <label for="name">Votre Prénom</label>
-			<input type="text" id="name" placeholder="tapez votre Prénom">
-            <label for="name">Votre Nom</label>
-			<input type="text" id="name" placeholder="tapez votre Nom">
-            <label for="email">email</label>
-			<input type="email" id="email" name="email" required>
-            <label for="name">Votre N de téléphone</label>
-			<input type="text" id="name" placeholder="tapez le numero">
-            <br>
-            <label for="textarea">Objet de voutre message</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="Text"></textarea>
-            <label for="textarea">Votre message</label>
-			<textarea name="textarea" id="textarea" rows="5" placeholder="Text"></textarea>
+            <div class="adhesionName">
+                <input type="text" id="name" placeholder="Prénom">  
+                <input type="text" id="name" placeholder="Nom">		        
+            </div>
+            <div class="adhesionEmail">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="name" placeholder="Téléphone">
+                
+            </div>
+            <div class="adhesionObjet">
+                <input type="text" id="name" placeholder="Objet">
+            </div>
+            <textarea name="textarea" id="textarea" rows="5" placeholder="Message"></textarea>
             
             <input type="submit" value="ENVOYER">
-            <br><br><br>
+            <script src=".../script.js"></script>
         </form>
         <h1>Coordonnées</h1>
          <section id="map-container">
@@ -126,7 +133,7 @@
         </section>
         <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
             <input type="submit" value="Devenir membre">
-            <script src="./index.js"></script>
+            <script src=".../script.js"></script>
 			
         </form>
         
