@@ -1,7 +1,9 @@
+body{
+    overflow-x: hidden;
+}
+
 header{
     color: #141414;
-    overflow: hidden;
-    // position: fixed;
     width: 100%;
     nav{
         width: 100%;
@@ -20,6 +22,8 @@ header{
             display: flex;
             justify-content: space-around;
             align-items: center;
+            z-index: 10;
+            transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
             .linkImgLogo{
                 img{
                     width: 90px;
@@ -109,7 +113,7 @@ header{
     }
 }
 
-@media screen and (max-width : 1020px){
+@media screen and (max-width : 1070px){
     body{
         header{
             nav{
@@ -137,7 +141,7 @@ header{
     }
 }
 
-@media screen and (max-width : 925px) {
+@media screen and (max-width : 950px) {
 
     body{
         header{
@@ -155,13 +159,36 @@ header{
                     align-items: center;
                     flex-direction: column;
                     cursor: pointer;
+                    z-index: 999;
                 }
                 .verticalNav{
                     position: absolute;
-                    display: none;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 50%;
+                    top: 0;
+                    right: -50%;
+                    background-color: #fff;
+                    .linkNavBarre{
+                        flex-direction: column;
+                        margin: 80px 0 0 15px;
+                        padding: 0;
+                        li{
+                            margin-bottom: 15px;
+                        }
+                    }
                     .linkImgLogo{
                         img{
                             width: 90px;
+                            display: none;
+                        }
+                    }
+                    .loginBarre{
+                        padding: 0 0 15px 15px;
+                        margin: 0;
+                        margin-left: 15px;
+                        img{
+                            width: 35px;
                         }
                     }
                     .imgMediaScreenNavBarre{
@@ -173,13 +200,13 @@ header{
     }
 
     .menuBurgerAction{
-        position: fixed;
-        left: 30%;
+        position: relative;
     }
 
     .menuBurgerAction span{
-        position: fixed;
-        top: 20px;
+        position: absolute;
+        top: 7px;
+        left: -21px;
     }
 
     .menuBurgerAction span:first-child{
@@ -204,7 +231,7 @@ header{
             transform: rotate(0deg);
         }
         from{
-            transform: rotate(360deg);
+            transform: rotate(-360deg);
         }
     }
     
@@ -224,6 +251,20 @@ header{
 
 
     .verticalNavAction{
-        left: -25px !important;
+        right: 0% !important;
+    }
+}
+
+@media screen and (max-width : 400px){
+    body{
+        header{
+            nav{
+                .verticalNav{
+                    width: 75%;
+                    top: 0;
+                    right: -75%;
+                }
+            }
+        }
     }
 }

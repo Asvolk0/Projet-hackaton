@@ -3,7 +3,13 @@
     height: 200px;
 }
 
+.btn_secondary:hover{
+    background-color: #4A9EC0;
+    color: #fff;
+}
+
 .cardCarousel{
+    margin-top: 150px;
     width: 80%;
     display: flex;
     justify-content: center;

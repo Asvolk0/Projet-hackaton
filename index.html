@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/cardHomePage.css">
+    <link rel="stylesheet" href="assets/css/partenaire.css">
+    <link rel="stylesheet" href="assets/css/autre.css">
 </head>
 <body>
     <header>
@@ -72,6 +74,7 @@
 
         </nav>
     </header>
+    <script src="assets/js/menuBurger.js"></script>
 
 
     <main>
@@ -83,7 +86,7 @@
                 <img class="img__slider" src="assets/img/slideTwo" alt="img2">
                 <img class="img__slider" src="assets/img/slideThree" alt="img3">
             </div>
-            <script src="assets/js/carouselWelcomeHome.js"></script>
+            <!-- <script src="assets/js/carouselWelcomeHome.js"></script> -->
     
     
             <!-- titre, sous titre et bouton réserver-->
@@ -116,7 +119,7 @@
                         Il permet de travailler à distance dans un environnement coopératif qui améliore la mise en réseau et le croisement des initiatives.
                     </p>
                     <a href="#">
-                        En Savoir Plus
+                        Voir les lieux
                     </a>
                 </div>
             </div>
@@ -124,30 +127,74 @@
 
 
 
+        <section class="equipement">
+            <h2 class="title_2"title_2">Nos équipements</h2>
+            <ul>
+                <li class="reassurance">
+                    <div class="reassurance_items">
+                        <img src="assets/img/wifi.png" 	alt="Pictograpmme WIFI">
+                    </div>
+                    <p>Wifi / Fibre</p>
+                </li>
+                <li class="reassurance">
+                    <div class="reassurance_items">
+                        <img src="assets/img/print.png" 	alt="Pictogramme imprimante">
+                    </div>
+                    <p>Imprimante</p>
+                </li>
+                <li class="reassurance">
+                    <div class="reassurance_items">
+                        <img src="assets/img/kitchen.png" 	alt="Pictogramme Cuisine">
+                    </div>
+                    <p>Cuisine</p>
+                </li>
+                <li class="reassurance">
+                    <div class="reassurance_items">
+                        <img src="assets/img/event.png" 	alt="Pictogramme espace evenementiel">
+                    </div>
+                    <p>Espace Evènementiel</p>
+                </li>
+                <li class="reassurance">
+                    <div class="reassurance_items">
+                    <img src="assets/img/meeting.png" 	alt="Pictogramme salle de réunion">
+                    </div>
+                    <p>Salle de Réunion</p>
+                </li>
+            </ul>
+        </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- partie mehdi -->
-
-
-
-
-
-
-
-
-
-
+        <section>
+            <h2 class="title_2">Nos dernières actualités</h2>
+            <div class="actualites">
+                <article class="news_items">
+                    <img src="assets/img/logo left card" alt="Ateliers réseaux sociaux">
+                    <div class="news_item_content">
+                        <p class="date_news">12 janvier 2022</p>
+                        <h3 class="news_title">Découvrez nos ateliers réseaux sociaux</h3>
+                        <p>Amélie propose un atelier de deux heures pour découvrir et maîtriser des techniques de kinésiologie pour la détente et la 	relaxation.</p>
+                    </div>
+                </article>
+                <article class="news_items">
+                    <img src="assets/img/petit-dejeuner-des-professionnels.jpg" alt="Petit déjeuner des professionnels">
+                    <div class="news_item_content">
+                        <p class="date_news">12 décembre 2021</p>
+                        <h3 class="news_title">Le P'tit déjeuner des professionnels</h3>
+                        <p>Comprendre et fabriquer ses produits ménagers (vraiment) écologiques et économiques !</p>
+                    </div>
+                </article>
+                <article class="news_items">
+                    <img src="assets/img/salon-sesam.jpg" alt="Salon SESAM">
+                    <div class="news_item_content">
+                        <p class="date_news">21 novembre 2022</p>
+                        <h3 class="news_title">Retrouvez noes entrepreneuses adhérentes au salon SESAM</h3>
+                        <p>Retrouvez nos entrepreneures adhérentes au salon SESAM organisé par le Club des Entrepreneurs du Médoc</p>
+                    </div>
+                </article>
+            </div>
+            <a class="btn_secondary" href="#">Voir plus d'actualités</a>
+        </section>
 
 
 
@@ -301,8 +348,73 @@
             <img class="arrowCardCarousel arrowCardCarouselRight" src="assets/img/next.png" alt="flèche à droite des articles qui permets de dérouler les avis vers la droite">
         </section>
 
+
+
+        
+
+        <script src="assets/js/carouselWelcomeHome.js"></script>
+
+        <!-- section partenaire -->
+        <section class="socialNetwork">
+            <div>
+                <img class="icon" src="assets/img/nos partenaires/MdiFacebook.svg" alt="logo Facebook noir et blanc à gauche">
+                <img class="icon" src="assets/img/nos partenaires/MdiInstagram.svg" alt="logo Instagram noir et blanc au milieu">
+                <img class="icon" src="assets/img/nos partenaires/MdiLinkedin.svg" alt="logo Linkedin noir et blanc à droite">
+            </div>
+            <span>Rejoignez-nous</span>
+        </section>
+
+
+
+
+    
+        <section class="sectionPartners">
+            <h2>
+                Nos partenaires
+            </h2>
+            <div class="sectionPartnersImg">
+                <img class="partenersImg" src="assets/img/nos partenaires/MedocTiers.png" alt="image du logo de médoc tiers lieux">
+                <img class="partenersImg" src="assets/img/nos partenaires/Coop.png" alt="image du logo de la coopérative tiers lieux">
+                <img class="partenersImg" src="assets/img/nos partenaires/NouvelleAquitaine.png" alt="image du logo de la nouvelle aquitaine">
+                <img class="partenersImg" src="assets/img/nos partenaires/CastelnauMedoc.png" alt="image du logo de CastelnauMedoc">
+                <img class="partenersImg" src="assets/img/nos partenaires/CCM.png" alt="image du logo de la communauté de commune méridullienne">
+                <img class="partenersImg" src="assets/img/nos partenaires/Cmso.png" alt="image du logo crédit mutuel sud-ouest">
+                <img class="partenersImg" src="assets/img/nos partenaires/Gironde.png" alt="image du logo de la Gironde">
+                <img class="partenersImg" src="assets/img/nos partenaires/Sb.png" alt="image du logo sb mes docs">
+                <img class="partenersImg" src="assets/img/nos partenaires/CampusDuLac.png" alt="image du logo du CampusDuLac">
+                <img class="partenersImg" src="assets/img/nos partenaires/Parc.png" alt="image du logo du parc naturel régional du medoc">
+            </div>
+        </section>
     </main>
+
+
+
+    <footer>
+		<div class="footer">
+			<img src="assets/img/logo-lescale-tiers-lieu-footer.png" alt="Logo L'escale tiers lieu">
+			<div class="formulaire">
+				<h3>Abonnez-vous à notre newsletter</h3>
+				<input type="email" placeholder="Votre email">
+				<button class="btn_primary">S'abonner</button>
+			</div>
+			<ul>
+				<li>
+					<a href="#">Réservation</a>
+				</li>
+				<li>
+					<a href="#">Adhésion</a>
+				</li>
+				<li>
+					<a href="#">Mon compte</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<p>&copy; 2022 L'Escale Tiers Lieu - <a href="#">Mentions légales</a> - <a href="#">Politique de confidentialité</a> - <a href="#">CGU</a> - <a href="#">Charte</a></p>
+	</footer>
+	<div id="backToTop"></div>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
-
-<script src="assets/css/cardCarousel.js"></script>
