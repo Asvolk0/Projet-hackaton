@@ -9,6 +9,18 @@
   @include background("escale-tiers-lieux-banner-actus.jpg", center, cover);
   padding: 18% 0;
   margin-bottom: 200px;
+  @include respond("mobile") {
+    font-size: 35px;
+  }
+  @include respond("tab") {
+    font-size: 40px;
+  }
+  @include respond("smallLaptop") {
+    font-size: 50px;
+  }
+  @include respond("laptop") {
+    font-size: 45px;
+  }
 }
 section.events {
   .title_2 {

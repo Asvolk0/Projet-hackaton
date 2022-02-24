@@ -70,37 +70,25 @@ section:nth-child(2) {
     }
     .news_item_content {
       padding: 35px 25px;
-      line-height: 25px;
+      line-height: 34px;
       .date_news {
-        font-size: 14px;
+        font-size: 16px;
         color: $gray;
         padding-bottom: 5px;
         @include respond("mobile") {
-          font-size: 12px;
+          font-size: 14px;
         }
         @include respond("mobileLarge") {
-          font-size: 12px;
+          font-size: 14px;
         }
       }
       .news_title {
         color: $secondaryColor;
         padding-bottom: 20px;
-        @include font("JOST_R", 22);
-        @include respond("mobile") {
-          font-size: 15px;
-        }
-        @include respond("mobileLarge") {
-          font-size: 16px;
-        }
-        @include respond("tab") {
-          font-size: 18px;
-        }
-        @include respond("tabLand") {
-          font-size: 20px;
-        }
+        @include font("JOST_R", 25);
       }
       & > p {
-        font-size: 18px;
+        font-size: 28px;
       }
     }
   }
