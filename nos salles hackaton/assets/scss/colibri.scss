@@ -1,0 +1,387 @@
+main{
+    #articleColibri{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+        img{
+            width: 50%;
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 57px;
+            .linkAnchor{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                padding-bottom: 39px;
+                li{
+                    font-family: 'Roboto Bold', sans-serif;
+                    margin: 5px 30px 10px 0;
+                    font-size: 35px;
+                    border-bottom: 3px solid #D2D2D2;
+                    a{
+                        color: #D2D2D2;
+                    }
+                }
+                li:nth-child(4){
+                    font-size: 42px;
+                    border-bottom-color: #96AB5C;
+                    a{
+                        color: #96AB5C;
+                    }
+                }
+            }
+            h2{
+                font-family: 'ArimaMadurai Bold', sans-serif;
+                padding-bottom: 39px;
+                font-size: 50px;
+                position: relative;
+            }
+            h2::after{
+                content: '';
+                position: absolute;
+                top: 56%;
+                left: 0;
+                width: 70%;
+                height: 2px;
+                background: #F6A029;
+            }
+            p{
+                font-size: 28px;
+                font-family: 'Jost', sans-serif;
+                padding: 0 300px 39px 0;
+            }
+            .priceContainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Jost', sans-serif;
+                position: relative;
+                padding-bottom: 39px;
+                li{
+                    margin-right: 31px;
+                    h4{
+                        font-size: 18px;
+                        font-weight: bold;
+                        position: relative;
+                    }
+                    h4::before, h4::after{
+                        content: "";
+                        position: absolute;
+                        background: #F6A029;
+                        width: 2px;
+                        height: 15px;
+                    }
+                    h4::before{
+                        top: 110%;
+                        left: -19px;
+                    }
+                    h4::after{
+                        top: 80%;
+                        right: -15px;
+                    }
+                    span{
+                        font-size: 18px;
+                        position: relative;
+                    }
+                    .spanBeforeAfter::before, .spanBeforeAfter::after{
+                        content: "";
+                        position: absolute;
+                        background: #F6A029;
+                    }
+                    .spanBeforeAfter::before{
+                        top: 80%;
+                        left: -15px;
+                        width: 2px;
+                        height: 15px;
+                    }
+                    .spanBeforeAfter::after{
+                        top: 110%;
+                        right: -20px;
+                        width: 10px;
+                        height: 10px;
+                        background: #fff;
+                        border-radius: 50%;
+                        border: 2px solid #F6A029;
+                    }
+                }
+            }
+            .priceContainer::before{
+                content: "";
+                position: absolute;
+                top: 55%;
+                left: -3%;
+                width: 100%;
+                height: 2px;
+                background: #F6A029;
+            }
+            .priceContainerBottom{
+                display: flex;
+                font-family: 'Jost', sans-serif;
+                position: relative;
+                padding-bottom: 39px;
+                li{
+                    margin-right: 31px;
+                }
+                span{
+                    font-size: 22px;
+                    position: relative;
+                }
+                .spanBeforeAfter::after, .spanBeforeAfter::before{
+                    content: "";
+                    position: absolute;
+                    background: #F6A029;
+                }
+                .spanBeforeAfter::after{
+                    width: 2px;
+                    height: 15px;
+                    top: 80%;
+                    left: -15px;
+                }
+                .spanBeforeAfter::before{
+                    top: 100%;
+                    right: -15px;
+                    width: 10px;
+                    height: 10px;
+                    background: #fff;
+                    border-radius: 50%;
+                    border: 2px solid #F6A029;
+                }
+            }
+            .priceContainerBottom::before{
+                content: "";
+                position: absolute;
+                top: 55%;
+                left: -3%;
+                width: 100%;
+                height: 2px;
+                background: #F6A029;
+            }
+            & > a{
+                margin-top: 20px;
+                padding: 8px 25px;
+                background: #fff;
+                color: #F6A029;
+                font-size: 30px;
+                font-family: 'Roboto Medium', sans-serif;
+                border: 2px solid #F6A029;
+                border-radius: 50px;
+                transition: 0.2s all;
+                &:hover{
+                    background: #F6A029;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1630px) {
+    main{
+        #articleColibri{
+            div{
+                .linkAnchor{
+                    li{
+                        font-size: 25px;
+                    }
+                    li:nth-child(4){
+                        font-size: 32px;
+                    }
+                }
+                h2{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 25px;
+                }
+                .priceContainer{
+                    li{
+                        h4{
+                            font-size: 18px;
+                        }
+                        span{
+                            font-size: 18px;
+                        }
+                        h4::before{
+                            top: 110%;
+                            left: -18px;
+                        }
+                        h4::after{
+                            top: 83%;
+                            right: -15px;
+                        }
+                        .spanBeforeAfter::before{
+                            top: 83%;
+                            left: -15px;
+                        }
+                        .spanBeforeAfter::after{
+                            top: 110%;
+                            right: -25px;
+                        }
+                    }
+                }
+                .priceContainerBottom{
+                    span{
+                        font-size: 20px;
+                    }
+                    .spanBeforeAfter::after{
+                        top: 85%;
+                    }
+                    .spanBeforeAfter::before{
+                        top: 110%;
+                        right: -29px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1370px) {
+    main{
+        #articleColibri{
+            img{
+                width: 80%;
+            }
+            flex-direction: column-reverse;
+            div{
+                width: 80%;
+                padding-bottom: 39px;
+                p{
+                    padding: 0 100px 39px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 988px) {
+    main{
+        #articleColibri{
+            img{
+                width: 100%;
+            }
+            div{
+                padding: 20px;
+                width: 100%;
+                .linkAnchor{
+                    li{
+                        font-size: 15px;
+                    }
+                    li:nth-child(4){
+                        font-size: 22px;
+                    }
+                }
+                .buttonReverse{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 25px;
+                }
+                .priceContainer{
+                    li{
+                        h4{
+                            font-size: 12px;
+                        }
+                        span{
+                            font-size: 12px;
+                        }
+                        h4::before{
+                            top: 140%;
+                            left: -15px;
+                        }
+                        h4::after{
+                            top: 89%;
+                            right: -15px;
+                        }
+                        .spanBeforeAfter::before{
+                            top: 83%;
+                            left: -15px;
+                        }
+                        .spanBeforeAfter::after{
+                            top: 135%;
+                            right: -29px;
+                        }
+                    }
+                }
+                .priceContainerBottom{
+                    span{
+                        font-size: 12px;
+                    }
+                    .spanBeforeAfter::before{
+                        top: 135%;
+                    }
+                }
+                & > a{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 450px) {
+    main{
+        & > p{
+            padding: 20px;
+        }
+        #articleColibri{
+            div{
+                .linkAnchor{
+                    li{
+                        font-size: 15px;
+                    }
+                    li:nth-child(4){
+                        font-size: 18px;
+                    }
+                }
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .priceContainer{
+                    li{
+                        h4{
+                            font-size: 7px;
+                        }
+                        span{
+                            font-size: 6px;
+                            font-weight: bold;
+                        }
+                        h4::before{
+                            top: 150%;
+                            left: -10px;
+                        }
+                        h4::after{
+                            top: 122%;
+                            right: -15px;
+                        }
+                        .spanBeforeAfter::before{
+                            top: 100%;
+                            left: -15px;
+                        }
+                        .spanBeforeAfter::after{
+                            top: 200%;
+                            right: -29px;
+                        }
+                    }
+                }
+                .priceContainerBottom{
+                    span{
+                        font-size: 10px;
+                    }
+                    .spanBeforeAfter::before{
+                        top: 145%;
+                    }
+                }
+            }
+        }
+    }
+}

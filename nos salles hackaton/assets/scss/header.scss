@@ -1,0 +1,296 @@
+*{padding: 0;margin: 0;box-sizing: border-box;scroll-behavior: smooth;}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "ArimaMadurai Bold";
+    src: url("../font/Arima_Madurai/ArimaMadurai-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("../font/Jost/static/Jost-Regular.ttf");
+}
+
+a, li{
+    list-style-type: none;
+    text-decoration: none;
+    color: #141414;
+}
+
+body{
+    color: #141414;
+    header{
+        // position: fixed;
+        width: 100%;
+        nav{
+            width: 100%;
+            padding: 25px;
+            #menuBurger{
+                display: none;
+                span{
+                    width: 23.14px;
+                    height: 3px;
+                    background: #4A9EC0;
+                    transition: 0.2s all;
+                }
+            }
+            .verticalNav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .linkImgLogo{
+                    img{
+                        width: 90px;
+                    }
+                }
+                .linkNavBarre{
+                    display: flex;
+                    justify-content: space-between;
+                    min-width: 500px;
+                    margin: 30px 0 0 5%;
+                    li{
+                        padding: 3px 20px;
+                        a{
+                            font-family: 'Roboto-Medium', sans-serif;
+                            font-size: 23px;
+                            padding: 3px 0;
+                            border-bottom: 1px solid transparent;
+                            position: relative;
+                            color: #333333;
+                        }
+                        a::before{
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 0;
+                            background: #F6A029;
+                            transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+                            height: 1px;
+                        }
+                        a:hover:before{
+                            width: 100%;
+                        }
+                    }
+                    li:first-child a{
+                        border-bottom-color: #F6A029;
+                    }
+                }
+                .loginBarre{
+                    margin-top: 30px;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+            
+        }
+        .imgMediaScreenNavBarre{
+            display: none;
+            cursor: pointer;
+            img{
+                width: 60px;
+            }
+        }
+        .headerBgImg{
+            width: 100%;
+            height: 680px;
+            background: center/cover no-repeat url(../img/Banniere.jpg);
+            .filtre{
+                height: 100%;
+                background: #00000090;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 70px;
+                    font-family: 'Abril Fatface', sans-serif;
+                    padding-bottom: 6px;
+                    border-bottom: 5px solid #F6A029;
+                }
+                span{
+                    padding: 20px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 65px;
+                    font-weight: 100;
+                    font-family: "Abel Regular", sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1450px){
+    body{
+        header{
+            nav{
+                .verticalNav{
+                    .linkImgLogo{
+                        img{
+                            width: 60px;
+                        }
+                    }
+                    .linkNavBarre{
+                        li{
+                            a{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .loginBarre{
+                        img{
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1100px){
+    body{
+        header{
+            nav{
+                .verticalNav{
+                    width: 100%;
+                    .linkImgLogo{
+                        img{
+                            width: 48px;
+                        }
+                    }
+                    .linkNavBarre{
+                        li{
+                            a{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .loginBarre{
+                        img{
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 988px) {
+
+    body{
+        header{
+            height: 100%;
+            nav{
+                display: flex;
+                justify-content: flex-end;
+                height: 100%;
+                padding: 35px;
+                position: relative;
+                #menuBurger{
+                    height: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                }
+                .verticalNav{
+                    position: absolute;
+                    .linkImgLogo{
+                        display: none;
+                        img{
+                            width: 90px;
+                        }
+                    }
+                    .loginBarre, .linkNavBarre{
+                        display: none;
+                    }
+                }
+            }
+            .imgMediaScreenNavBarre{
+                display: block;
+                img{
+                    position: absolute;
+                    top: -200%;
+                    left: 50%;
+                }
+            }
+            .headerBgImg{
+                .filtre{
+                    h1{
+                        font-size: 50px;
+                    }
+                    span{
+                        padding: 10px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .menuBurgerAction{
+        position: fixed;
+        left: 30%;
+    }
+
+    .menuBurgerAction span{
+        position: fixed;
+        top: 20px;
+    }
+
+    .menuBurgerAction span:first-child{
+        animation: rotateAnimFirstChild 0.5s;
+    }
+
+    .menuBurgerAction span:last-child{
+        animation: rotateAnimLastChild 0.5s;
+    }
+
+    @keyframes rotateAnimFirstChild {
+        to{
+            transform: rotate(0deg);
+        }
+        from{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotateAnimLastChild {
+        to{
+            transform: rotate(0deg);
+        }
+        from{
+            transform: rotate(360deg);
+        }
+    }
+    
+    .menuBurgerAction span:nth-child(1){
+        transform: translateY(50%);
+        transform: rotate(45deg);
+    }
+    
+    .menuBurgerAction span:nth-child(2){
+        opacity: 0;
+    }
+    
+    .menuBurgerAction span:nth-child(3){
+        transform: translateY(-50%);
+        transform: rotate(-45deg);
+    }
+
+
+    .verticalNavAction{
+        left: -25px !important;
+    }
+}
