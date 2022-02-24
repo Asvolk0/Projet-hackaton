@@ -1,0 +1,112 @@
+// CATEGORIE ACTUALITES EVENEMENTS
+// .bannerActus {
+//   @include background();
+// }
+.bannerActus {
+  color: $white;
+  @include font("AFF_R", 80);
+  text-align: center;
+  @include background("escale-tiers-lieux-banner-actus.jpg", center, cover);
+  padding: 18% 0;
+  margin-bottom: 200px;
+}
+section.events {
+  .title_2 {
+    text-align: left;
+    padding-left: 16%;
+    @include font("JOST_R", 50);
+    &::before {
+      @include borderTitle(385);
+      @include respond("mobile") {
+        @include borderTitle(190);
+      }
+      @include respond("tab") {
+        @include borderTitle(215);
+      }
+      @include respond("tabLand") {
+        @include borderTitle(335);
+      }
+      @include respond("laptop") {
+        @include borderTitle(305);
+      }
+    }
+    @include respond("mobile") {
+      font-size: 25px;
+      padding-left: 40px;
+    }
+    @include respond("tab") {
+      font-size: 28px;
+      padding-left: 40px;
+    }
+    @include respond("tabLand") {
+      font-size: 35px;
+      padding-left: 45px;
+    }
+    @include respond("smallLaptop") {
+      font-size: 40px;
+      padding-left: 150px;
+    }
+    @include respond("laptop") {
+      font-size: 45px;
+      padding-left: 160px;
+    }
+  }
+  .actualites {
+    flex-wrap: wrap;
+    .news_items {
+      position: relative;
+      flex-basis: 33%;
+      margin-bottom: 45px;
+      &:not(:nth-child(2n + 1)) {
+        margin-right: 0;
+      }
+      & > img {
+        width: 100%;
+      }
+      .news_item_content {
+        padding: 35px 25px 250px;
+        .date_news {
+          padding-bottom: 20px;
+        }
+        .news_title {
+          padding-bottom: 35px;
+        }
+      }
+      .socialIcons {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 15px;
+        width: 100%;
+        &::before {
+          content: "";
+          position: absolute;
+          border: 1px solid $primaryColor;
+          width: 150px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.6;
+        }
+        & > ul {
+          @include flex(center, center);
+          & > li {
+            & > i {
+              font-size: 35px;
+              padding-top: 5px;
+            }
+            &:not(:last-child) {
+              margin-right: 25px;
+            }
+          }
+        }
+        .socialHeader {
+          font-size: 14px;
+          text-align: center;
+          color: $gray;
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}
