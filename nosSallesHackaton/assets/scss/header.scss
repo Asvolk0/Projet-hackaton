@@ -76,8 +76,8 @@ body{
                             width: 100%;
                         }
                     }
-                    li:first-child a{
-                        border-bottom-color: #F6A029;
+                    li:nth-child(2) a{
+                        border-bottom: 1px solid #F6A029;
                     }
                 }
                 .loginBarre{
