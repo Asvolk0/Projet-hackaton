@@ -92,15 +92,16 @@
         </form>
         <h3>Contactez-nous en ligne!</h3>
         <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
-            <div class="d-inline">
-                <p>Votre civilité:</p>
+            <div class="adhesionCivil">
+                <span>
+                    Votre civilité *:
+                </span>
+                <label for="madame">Madame</label>
                 <input id="madame" type="radio" name="choice_radio" value="madame" checked>
-                    <label for="madame">Madame</label>
-                    <input id="monsieur" type="radio" name="choice_radio" value="monsieur">
-                    <label for="monsieur">Monsieur</label>
-
-                
+                <label for="monsieur">Monsieur</label>
+                <input id="monsieur" type="radio" name="choice_radio" value="monsieur">   
             </div>
+            
             <label for="name">Votre Prénom</label>
 			<input type="text" id="name" placeholder="tapez votre Prénom">
             <label for="name">Votre Nom</label>
@@ -118,7 +119,6 @@
             <input type="submit" value="ENVOYER">
             <br><br><br>
         </form>
-        <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
            <section>
                <div>
            
@@ -126,6 +126,7 @@
             
                 </div>
             </section>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data"> 
             <input type="submit" value="Devenir membre">
             <script src="./index.js"></script>
 			
