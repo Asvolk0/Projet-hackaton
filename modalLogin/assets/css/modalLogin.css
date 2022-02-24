@@ -1,0 +1,66 @@
+a, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modalLogin{
+    width: 600px;
+    height: 600px;
+    background-color: whitesmoke;
+}
+
+.modalLogin h1{
+    text-align: center;
+    color: orange;
+    padding: 60px 0;
+}
+
+.namePlace{
+    width: 50%;
+    padding: 20px;
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coBut{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.modalLogin .linkBox{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.modalLogin a{
+    text-align: center;
+    width: 200px;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid orange;
+    color: orange;
+    transition: 0.2s all;
+}
+
+.modalLogin a:hover{
+    background: orange;
+    color: #fff;
+}
+
+
