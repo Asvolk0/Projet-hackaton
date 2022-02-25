@@ -1,0 +1,103 @@
+.mentions {
+  padding-bottom: 200px;
+  .title_2 {
+    line-height: 70px;
+    @include font("AFF_R", 50);
+    &::before {
+      @include borderTitle(380);
+      @include respond("mobile") {
+        @include borderTitle(180);
+      }
+      @include respond("tab") {
+        @include borderTitle(285);
+      }
+      @include respond("tabLand") {
+        @include borderTitle(315);
+      }
+      @include respond("laptop") {
+        @include borderTitle(380);
+      }
+    }
+    @include respond("mobile") {
+      font-size: 24px;
+      padding: 15px;
+      line-height: 24px;
+    }
+    @include respond("tab") {
+      font-size: 38px;
+      padding: 15px;
+      line-height: 38px;
+    }
+    @include respond("tabLand") {
+      font-size: 42px;
+      padding: 15px;
+      line-height: 42px;
+    }
+    @include respond("laptop") {
+      font-size: 48px;
+      line-height: 48px;
+      padding: 15px;
+    }
+  }
+  & > h2 {
+    @include font("AM_B", 40);
+    @include respond("mobile") {
+      font-size: 18px;
+      padding: 70px 15px 15px;
+    }
+    @include respond("tab") {
+      font-size: 24px;
+      padding: 70px 15px 15px;
+    }
+    @include respond("tabLand") {
+      font-size: 32px;
+      padding: 70px 15px 15px;
+    }
+    @include respond("laptop") {
+      font-size: 38px;
+    }
+  }
+  .charteIntro {
+    @include font("ROB_M", 28);
+  }
+  & > h3 {
+    @include font("ROB_M", 28);
+    color: rgba(128, 128, 128, 0.9);
+    padding: 100px 0 0 50px;
+    @include respond("mobile") {
+      font-size: 18px;
+      padding: 15px;
+    }
+    @include respond("tab") {
+      font-size: 24px;
+      padding: 15px;
+    }
+    @include respond("tabLand") {
+      font-size: 26px;
+      padding: 15px;
+      @include respond("laptop") {
+        font-size: 28px;
+      }
+    }
+  }
+  & > a {
+    font-size: 28px;
+    color: $secondaryColor;
+    padding: 100px 0 0 50px;
+    @include respond("mobile") {
+      font-size: 18px;
+      padding: 15px;
+    }
+    @include respond("tab") {
+      font-size: 24px;
+      padding: 15px;
+    }
+    @include respond("tabLand") {
+      font-size: 26px;
+      padding: 15px;
+      @include respond("laptop") {
+        font-size: 28px;
+      }
+    }
+  }
+}
