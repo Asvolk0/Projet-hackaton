@@ -89,6 +89,7 @@ header{
 
 @media screen and (max-width : 1400px){
     body{
+        overflow-x: hidden;
         header{
             nav{
                 .verticalNav{
@@ -118,6 +119,7 @@ header{
 
 @media screen and (max-width : 1100px){
     body{
+        overflow-x: hidden;
         header{
             nav{
                 .verticalNav{
@@ -147,6 +149,7 @@ header{
 @media screen and (max-width : 995px) {
 
     body{
+        overflow-x: hidden;
         header{
             height: 100%;
             nav{
@@ -233,6 +236,7 @@ header{
 
 @media screen and (max-width : 400px){
     body{
+        overflow-x: hidden;
         header{
             nav{
                 .verticalNav{
