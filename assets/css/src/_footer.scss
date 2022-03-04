@@ -141,9 +141,9 @@ footer {
 }
 
 #backToTop {
-  display: inline-block;
   background-color: $primaryColor;
   color: white;
+  @include flex(center, center);
   position: fixed;
   bottom: 70px;
   right: 5px;

@@ -259,6 +259,7 @@ section.location {
   text-align: center;
   font-weight: 600;
   width: 180px;
+  margin-bottom: 50px;
   @include respond("mobile") {
     margin: $mxAuto;
   }
